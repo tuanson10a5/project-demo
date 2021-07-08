@@ -1,4 +1,8 @@
-const cat = require('./cat')
+const Cat = require('./cat')
+const Mouse = require('./mouse')
 
-let newCat = new cat('tom')
-newCat.sayHi()
+let tom = new Cat('tom')
+let jerry = new Mouse('jerry')
+tom.sayHi()
+tom.eat(jerry)
+console.log(tom)
